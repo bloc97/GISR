@@ -7,6 +7,7 @@ Explores the use of the guided filter [Kaiming He et al., ECCV2010](http://kaimi
 [Report](Report_FR.pdf) (In French)  
 C Code  
 Images used are located in the `test_images` folder, the algorithm outputs are in the `output` folder.  
+The `test` bash script will compile the program using gcc and process all the test images.  
 
 ## Results
 ![Examples](img/Comparison.png?raw=true)
