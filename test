@@ -1,0 +1,18 @@
+gcc -o GuidedFilter GuidedFilter.c -lm
+gcc -o GuidedFilter_Color GuidedFilter_Color.c -lm
+./GuidedFilter test_images/cat test_images/cat output/cat 16 0.4
+./GuidedFilter test_images/fly test_images/fly output/fly 16 0.2
+./GuidedFilter_Color test_images/fly test_images/fly output/fly 16 0.2
+./GuidedFilter_Color test_images/ruins-color test_images/ruins-guide output/ruins-output 5 0.01 colorize
+./GuidedFilter_Color test_images/feather-image test_images/feather-guide output/feather-output 59 0.002
+./GuidedFilter_Color test_images/parking-image test_images/parking-guide output/parking-output 3 0.005
+./GuidedFilter_Color test_images/city-image test_images/city-image output/city-denoise 9 0.3
+./GuidedFilter_Color test_images/city-image test_images/city-guide output/city-output 17 0.01
+./GuidedFilter_Color test_images/cave-image test_images/cave-image output/cave-denoise 11 0.2
+./GuidedFilter_Color test_images/cave-image test_images/cave-guide output/cave-output 17 0.02
+./GuidedFilter_Color test_images/shelves-image test_images/shelves-guide output/shelves-output 17 0.01
+./GuidedFilter_Color test_images/shelves-image test_images/shelves-image output/shelves-denoise 7 0.3
+./GuidedFilter_Color test_images/synthetic1-image test_images/synthetic1-guide output/synthetic1-output 15 0.01
+./GuidedFilter_Color test_images/synthetic2-image test_images/synthetic2-guide output/synthetic2-output 15 0.01
+./GuidedFilter_Color test_images/synthetic3-image test_images/synthetic3-guide output/synthetic3-output 15 0.01
+./GuidedFilter_Color test_images/synthetic4-image test_images/synthetic4-guide output/synthetic4-output 15 0.01
